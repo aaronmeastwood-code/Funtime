@@ -1,6 +1,5 @@
-package src
 import java.util.Scanner;
-public class Numbers{
+public class ManualList {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the maximum:");
@@ -15,7 +14,7 @@ public class Numbers{
             } else {
                 System.out.println(i + " is Odd");
              }
-    }
+    }sc.close();
     }   
-sc.close();
+
 }
