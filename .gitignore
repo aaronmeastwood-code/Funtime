@@ -1,0 +1,22 @@
+# Java compiled files
+*.class
+
+# Build folders
+bin/
+out/
+build/
+target/
+
+# VS Code settings
+.vscode/
+
+# Python virtual environment
+myvenv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
