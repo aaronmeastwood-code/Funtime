@@ -1,4 +1,4 @@
-function runOddEven() {
+function runManualList() {
     const maxInput = prompt("Enter the max number:"); // replace readline with prompt
     const max = parseInt(maxInput);
 

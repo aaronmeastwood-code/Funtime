@@ -6,8 +6,28 @@
 </head>
 <body>
     <h1>Odd/Even Numbers Checker</h1>
-    <button onclick="runOddEven()">Run Odd/Even</button>
+    <button onclick="runManualList()">Run Odd/Even</button>
 
-    <script src="ManualList.js"></script>
+    <div id="output" style="margin-top:20px;"></div>
+
+    <script>
+        function runManualList() {
+            const max = parseInt(prompt("Enter the max number:"));
+            if (isNaN(max) || max < 1) {
+                alert("Please enter a valid number!");
+                return;
+            }
+
+            const outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = ""; // Clear previous output
+
+            for (let i = 1; i <= max; i++) {
+                const result = (i % 2 === 0) ? `${i} is Even` : `${i} is Odd`;
+                const p = document.createElement("p");
+                p.textContent = result;
+                outputDiv.appendChild(p);
+            }
+        }
+    </script>
 </body>
 </html>
